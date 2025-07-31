@@ -4,13 +4,14 @@ import { Phone, MessageCircle, Clock, Shield, Star, Car, Plane, Mountain } from 
 // Data for the new FeaturedPackages component, based on the image
 const featuredPackagesData = [
   {
-    image: '/images/kanchi.jpeg', // Add this image to your /public/images folder
+    image: '/images/kanchi.jpeg',
     title: 'Kachipuram Temples Taxi',
     temples: 'Tiruttani temple, Kanchipuram (3) temples',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹4800' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹6500' },
-      { vehicle: 'Innova - 6 persons', price: '₹8500' },
+      { vehicle: 'Etios - 4 persons', price: '₹4500' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹5500' },
+      { vehicle: 'Innova - 6 persons', price: '₹6500' },
+      { vehicle: 'Crysta - 6 persons', price: '₹7000' },
       { vehicle: 'Tempo - 12 persons', price: '₹10500' },
       { vehicle: 'Tempo - 17 persons', price: '₹11500' },
       { vehicle: 'Mini bus - 20 persons', price: '₹13500' },
@@ -19,13 +20,13 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: '/images/tirumala.jpeg', // Add this image to your /public/images folder
+    image: '/images/tirumala.jpeg',
     title: 'Tirumala Taxi Package',
     temples: 'Varahaswamy temple, Balaji Darshan, Padmavathi Temple',
     prices: [
       { vehicle: 'Etios - 4 persons', price: '₹2800' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹3500' },
-      { vehicle: 'Innova - 6 persons', price: '₹4500' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹3300' },
+      { vehicle: 'Innova - 6 persons', price: '₹4300' },
       { vehicle: 'Tempo - 12 persons', price: '₹5500' },
       { vehicle: '17 persons', price: '₹8300' },
       { vehicle: '20 persons', price: '₹11000' },
@@ -34,28 +35,28 @@ const featuredPackagesData = [
     ],
   },
   {
-    image: '/images/isckon.jpeg', // Add this image to your /public/images folder
+    image: '/images/isckon.jpeg',
     title: 'Tirupati 5 local Temples',
     temples: 'Padmavathi Temple, Kapilatheertham, Iskon temple, Govindaraja swamy temple, Srikalahasti temple',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹4000' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹5000' },
-      { vehicle: 'Innova - 6 persons', price: '₹5,800' },
-      { vehicle: 'Tempo - 12 persons', price: '₹6500' },
+      { vehicle: 'Etios - 4 persons', price: '₹3000' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹3500' },
+      { vehicle: 'Innova - 6 persons', price: '₹4000' },
+      { vehicle: 'Tempo - 12 persons', price: '₹6000' },
       { vehicle: 'Tempo - 17 persons', price: '₹9000' },
       { vehicle: 'Mini bus - 20 persons', price: '₹12000' },
       { vehicle: 'Mini bus - 27 persons', price: '₹16250' },
       { vehicle: 'Bus - 40 persons', price: '₹20000' },
     ],
   },
-    {
-    image: '/images/arunachalanm with golden temple.webp  ', // Add this image to your /public/images folder
+  {
+    image: '/images/arunachalanm with golden temple.webp',
     title: 'Arunachalam 2 Days',
     temples: 'Kanipakam, Golden temple, Arunachalam, Kanchipuram (3) temples, Tiruttani Temple',
     prices: [
-      { vehicle: 'Etios - 4 persons', price: '₹9500' },
-      { vehicle: 'Ertiga - 5 persons', price: '₹12500' },
-      { vehicle: 'Innova - 6 persons', price: '₹15500' },
+      { vehicle: 'Etios - 4 persons', price: '₹9000' },
+      { vehicle: 'Ertiga - 5 persons', price: '₹11000' },
+      { vehicle: 'Innova - 6 persons', price: '₹13000' },
       { vehicle: 'Tempo - 12 persons', price: '₹18500' },
       { vehicle: 'Tempo - 17 persons', price: '₹21000' },
       { vehicle: 'Mini bus - 20 persons', price: '₹27000' },
@@ -64,6 +65,7 @@ const featuredPackagesData = [
     ],
   },
 ];
+
 
 // The new component for the 4 featured packages
 const FeaturedPackages = () => {
