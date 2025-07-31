@@ -109,6 +109,50 @@ const FeaturedPackages = () => {
     );
 }
 
+// New Drop Taxi component
+const dropTaxiData = [
+  { destination: 'Chennai ', price: '₹4,500' },
+  { destination: 'Bangalore ', price: '₹6,500' },
+  { destination: 'Arunachalam ', price: '₹6,000' },
+  { destination: 'Hyderabad ', price: '₹15,500' },
+  { destination: 'Nellore ', price: '₹4,500' },
+  { destination: 'Vijayawada ', price: '₹12,000' },
+];
+
+const FeaturedDropTaxi = () => (
+  <div className="bg-blue-50 py-16">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Drop Taxi - One Way Outstation</h2>
+        <p className="text-lg text-blue-700">Best rates for one-way drop taxi from Tirupati to major cities</p>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="min-w-full bg-white rounded-lg shadow-md">
+          <thead>
+            <tr>
+              <th className="py-3 px-6 bg-blue-100 text-left text-sm font-semibold text-blue-900">Destination</th>
+              <th className="py-3 px-6 bg-blue-100 text-left text-sm font-semibold text-blue-900">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {dropTaxiData.map((item, idx) => (
+              <tr key={idx} className="border-b last:border-b-0">
+                <td className="py-3 px-6 text-blue-800 font-medium">{item.destination}</td>
+                <td className="py-3 px-6 text-blue-800 font-semibold">{item.price}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="text-center mt-8">
+        <a href="https://wa.me/918801838383" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors">
+          Book Drop Taxi Now
+        </a>
+      </div>
+    </div>
+  </div>
+);
+
 const Home = () => {
   const testimonials = [
     {
@@ -431,8 +475,10 @@ const Home = () => {
         </div>
       </div>
 
+
       {/* <<< NEW FEATURED PACKAGES SECTION INSERTED HERE >>> */}
       <FeaturedPackages />
+      <FeaturedDropTaxi />
 
       {/* Testimonials */}
       <section className="py-16 bg-white">
